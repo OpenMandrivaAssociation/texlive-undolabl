@@ -1,12 +1,12 @@
-# revision 23537
+# revision 25010
 # category Package
 # catalog-ctan /macros/latex/contrib/undolabl
-# catalog-date 2011-08-12 14:47:20 +0200
+# catalog-date 2012-01-02 14:24:13 +0100
 # catalog-license lppl1.3
-# catalog-version 1.0j
+# catalog-version 1.0k
 Name:		texlive-undolabl
-Version:	1.0j
-Release:	2
+Version:	1.0k
+Release:	1
 Summary:	Override existing labels
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/undolabl

@@ -6,7 +6,7 @@
 # catalog-version 1.0k
 Name:		texlive-undolabl
 Version:	1.0k
-Release:	6
+Release:	7
 Summary:	Override existing labels
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/undolabl

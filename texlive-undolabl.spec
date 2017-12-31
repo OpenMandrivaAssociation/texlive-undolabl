@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version 1.0k
 Name:		texlive-undolabl
-Version:	1.0k
-Release:	9
+Version:	1.0l
+Release:	1
 Summary:	Override existing labels
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/undolabl

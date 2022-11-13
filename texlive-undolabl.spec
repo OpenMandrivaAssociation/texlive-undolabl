@@ -1,19 +1,13 @@
-# revision 25010
-# category Package
-# catalog-ctan /macros/latex/contrib/undolabl
-# catalog-date 2012-01-02 14:24:13 +0100
-# catalog-license lppl1.3
-# catalog-version 1.0k
 Name:		texlive-undolabl
-Version:	1.0l
-Release:	2
+Version:	36681
+Release:	1
 Summary:	Override existing labels
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/undolabl
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/undolabl.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/undolabl.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/undolabl.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/undolabl.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/undolabl.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/undolabl.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ The package allows the user to override existing labels (for
 example, those generated automatically).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,27 +39,11 @@ example, those generated automatically).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0k-1
-+ Revision: 759071
-- Update to latest upstream release
-
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0j-2
-+ Revision: 757285
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0j-1
-+ Revision: 719848
-- texlive-undolabl
-- texlive-undolabl
-- texlive-undolabl
-

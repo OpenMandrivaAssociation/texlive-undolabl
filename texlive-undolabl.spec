@@ -1,6 +1,6 @@
 Name:		texlive-undolabl
-Version:	36681
-Release:	2
+Version:	65846
+Release:	1
 Summary:	Override existing labels
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/undolabl

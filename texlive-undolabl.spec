@@ -3,7 +3,7 @@ Version:	65846
 Release:	1
 Summary:	Override existing labels
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/undolabl
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/undolabl
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/undolabl.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/undolabl.doc.r%{version}.tar.xz

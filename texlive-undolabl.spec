@@ -1,5 +1,5 @@
 Name:		texlive-undolabl
-Version:	65846
+Version:	73048
 Release:	1
 Summary:	Override existing labels
 Group:		Publishing
